@@ -8,12 +8,15 @@ import {
 } from "react-router";
 import Root from './Components/Root/Root.jsx';
 import Home from './Components/Home/Home.jsx';
+import CountryDetails from './Components/Home/CountryDetails.jsx';
+
 const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
     children: [
       {index: true, Component: Home},
+      {path: "/country/:name", element: <CountryDetails></CountryDetails>},
     ]
   },
 ]);

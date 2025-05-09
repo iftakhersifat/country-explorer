@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CountryCard from './CountryCard';
+import { Link } from 'react-router';
 
 const Home = () => {
     const [data, setData] = useState([]);
@@ -26,7 +27,9 @@ const Home = () => {
 
             <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
                 {
-                    filtered.map(country=><CountryCard key={country.cca2} country={country}></CountryCard>)
+                    filtered.map(country=><Link to={`/country/${country.name.common}`} key={country.cca2}>
+                    <CountryCard country={country}></CountryCard>
+                    </Link>)
                 }
             </div>
             
