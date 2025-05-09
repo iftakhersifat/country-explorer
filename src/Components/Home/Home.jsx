@@ -18,13 +18,13 @@ const Home = () => {
 
     // console.log(data)
     return (
-        <div className='container mx-auto mt-10'>
+        <div className='container mx-auto mt-10 p-4 md:p-0'>
             {/* input field */}
-            <input type="text" placeholder='Search for a country' className='p-2 border border-amber-500 rounded w-full mb-4'
+            <input type="text" placeholder='Search for a country' className='p-2 border border-amber-500 rounded-2xl w-full mb-4'
             value={search} onChange={(e)=>setSearch(e.target.value)}
             />
 
-            <div>
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
                 {
                     filtered.map(country=><CountryCard country={country}></CountryCard>)
                 }
