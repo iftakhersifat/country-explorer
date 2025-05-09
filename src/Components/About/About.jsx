@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, User } from 'lucide-react'; // optional icons
+import { Globe, User } from 'lucide-react';
 
 const About = () => {
   return (
