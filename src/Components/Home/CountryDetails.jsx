@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 
 const CountryDetails = () => {
+  useEffect(()=>{
+      document.title="Details | CountryExplorer"
+    },[])
+
     const { name } = useParams();
     const [country, setCountry] = useState(null);
     const navigate = useNavigate();

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Globe, User } from 'lucide-react';
 
 const About = () => {
+  useEffect(()=>{
+    document.title="About | CountryExplorer"
+  },[])
   return (
     <div className='p-4 md:p-0'>
         <div className="container mx-auto mt-10 p-6 bg-white border border-amber-200 rounded-xl shadow-md">

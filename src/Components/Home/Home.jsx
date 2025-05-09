@@ -3,6 +3,10 @@ import CountryCard from './CountryCard';
 import { Link } from 'react-router';
 
 const Home = () => {
+    useEffect(()=>{
+        document.title="Home | CountryExplorer"
+      },[])
+
     const [data, setData] = useState([]);
     const [search, setSearch] = useState("");
 
