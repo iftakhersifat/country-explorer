@@ -1,0 +1,17 @@
+/* Import Poppins and Inter fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Default global font */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Optional: apply Poppins to all elements */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Utility class to use Inter when needed */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}

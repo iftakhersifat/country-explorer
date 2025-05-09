@@ -18,7 +18,7 @@ const Navbar = () => {
         </ul>
         </div>
         <span className="text-4xl">🌎</span>
-            <h1 className="text-3xl font-bold text-blue-600">Country Explorer</h1>
+            <h1 className="text-3xl font-bold font-poppins text-blue-600">Country Explorer</h1>
             </div>
 
             {/* link section */}

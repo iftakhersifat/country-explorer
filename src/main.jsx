@@ -11,6 +11,7 @@ import Home from './Components/Home/Home.jsx';
 import CountryDetails from './Components/Home/CountryDetails.jsx';
 import About from './Components/About/About.jsx';
 import NotFound from './Components/NotFound/NotFound.jsx';
+import './App.css';
 
 const router = createBrowserRouter([
   {
