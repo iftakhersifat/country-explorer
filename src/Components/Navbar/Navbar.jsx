@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
         <div className='container mx-auto'>
-            <Link to="/">Home</Link>
+            <NavLink to="/" className={({isActive})=> isActive ? "text-amber-500 underline" : ""}>Home</NavLink>
+            <NavLink to="/about" className={({isActive})=> isActive ? "text-amber-500 underline" : ""}>About Us</NavLink>
         </div>
     );
 };
