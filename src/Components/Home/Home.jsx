@@ -26,7 +26,7 @@ const Home = () => {
 
             <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
                 {
-                    filtered.map(country=><CountryCard country={country}></CountryCard>)
+                    filtered.map(country=><CountryCard key={country.cca2} country={country}></CountryCard>)
                 }
             </div>
             
