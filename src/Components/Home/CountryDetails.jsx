@@ -18,7 +18,7 @@ const CountryDetails = () => {
 
     return (
         <div className='container mx-auto mt-10 border border-blue-300 bg-blue-50 p-4 rounded-2xl space-y-4 lg:flex gap-12'>
-            <div className='lg:w-[30%] space-y-4'>
+            <div className='lg:w-[30%] space-y-4 flex flex-col justify-center'>
                 <img className="w-96 h-60 mx-auto rounded-xl" src={country.flags.png} alt="Flag" />
                 <h1 className='text-2xl font-bold text-center text-gray-800'>{country.name.common}</h1> 
             </div>
