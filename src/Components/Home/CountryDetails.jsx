@@ -22,7 +22,8 @@ const CountryDetails = () => {
     }
 
     return (
-        <div className='container mx-auto mt-10 border border-blue-300 bg-blue-50 p-4 rounded-2xl '>
+        <div className='p-4 md:p-0'>
+          <div className='container mx-auto mt-10 border border-blue-300 bg-blue-50 p-4 rounded-2xl '>
             <div className='space-y-4 lg:flex gap-12'>
             <div className='lg:w-[30%] space-y-4 flex flex-col justify-center'>
                 <img className="w-96 h-60 mx-auto rounded-xl" src={country.flags.png} alt="Flag" />
@@ -99,6 +100,7 @@ const CountryDetails = () => {
 
         </div>
         <button onClick={handelReturn} className='btn bg-amber-500 text-white p-4 flex rounded-2xl mx-auto mt-10'>Go Back Home</button>
+        </div>
         </div>
     );
 };
