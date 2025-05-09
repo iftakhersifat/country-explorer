@@ -4,8 +4,8 @@ import { Globe, User } from 'lucide-react';
 const About = () => {
   return (
     <div className='p-4 md:p-0'>
-        <div className="container mx-auto mt-10 p-6 bg-white border border-gray-200 rounded-xl shadow-md">
-      <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+        <div className="container mx-auto mt-10 p-6 bg-white border border-amber-200 rounded-xl shadow-md">
+      <h2 className="md:text-3xl text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
         <Globe className="text-blue-500" /> About Country Explorer
       </h2>
       <p className="text-gray-700 leading-relaxed mb-3">
