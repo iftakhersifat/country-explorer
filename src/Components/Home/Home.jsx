@@ -12,7 +12,7 @@ const Home = () => {
 
     // fetch data
     useEffect(()=>{
-        fetch("https://restcountries.com/v3.1/all")
+        fetch("https://restcountries.com/v3.1/all?fields=name,flags,capital,region,subregion,population,cca2")
         .then(res=>res.json())
         .then(data=>{
             setData(data)
